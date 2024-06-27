@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o html</title>
+    <style>
+        .conteudo{display: flex; justify-content: space-around; }
+        /* .btn{} */
+    </style>
+</head>
+<body>
+    <h1 class="manipular">Qualquer Coisa</h1>
+
+    <div class="conteudo">
+        <div class="titulo">Numero</div>
+
+        <!-- quando eu for manipular um input vou usar um value -->
+        <div><input class="entrada" type="text" placeholder="Digite um número"></div>
+        <div class="saida">Resposta</div>
+    </div>
+    <div>
+        <button class="btn">Cadastrar</button>
+    </div>
+
+    <script>
+        var titulo=document.querySelector(".titulo");  //document te permite pegar tudo que tem no documento html
+        titulo.innerHTML="Novo Numero";
+        console.log(titulo)
+
+        var manipular=document.querySelector(".manipular");
+        manipular.innerHTML="Já Manipulado";
+        console.log(manipular)
+
+        var resposta=document.querySelector(".saida");
+        resposta.innerHTML="Aqui vai ser a Resposta";
+
+        var entradaDados=document.querySelector(".entrada");
+        entradaDados.value="Conteúdo Interno";
+
+        //Para pegar o valor de dentro do input vou usar o value
+        //console.log(entradaDados.value)
+    </script>
+</body>
+</html>

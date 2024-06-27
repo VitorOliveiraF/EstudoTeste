@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+
+    <script>
+        //Operadores
+
+        //Matematicos
+        console.log(20+4) //Adição
+        console.log(10*10) //Multiplicação
+        console.log(20-10) //Subtração
+        console.log(5/2) //Divisão
+        console.log(5%2) //mod, pega o resto, usa numeros inteiros, o n°2 cabe duas Vezes no cinco e sobra 1
+        console.log(5**2) //Potenciação
+
+        //Relacional
+        // > maior
+        // < menor
+        // >= maior ou igual
+        // <= menor ou igual
+        // == igual em valor
+        // === igual em tipo e valor
+        // != diferente
+        console.log("--------------------")
+        console.log(23>10)//true
+        console.log(5<10)//true
+        console.log(4>=5)//false
+        console.log(10>=10)//true
+        console.log(12=="12")//true
+        console.log(12==="12")//false
+        console.log(10!=10)//false
+
+        //Operador lógico
+        // && e -> no caso do e os dois valores tem que ser verdade para dar verdade
+        // || or ou -> no caso do ou so vai ser falso quando os dois valores forem falsos
+        // not ~-> negar uma sentença, negar um true o torna false, negar um false o torna true
+        console.log("--------------------")
+        var p=true;
+        var q=false;
+        //                       true
+        //              false     ou   true
+        //          (f    e    v) ou (  v  )
+        console.log((p==q && 4>3) || (p!=q))
+
+        //operadores de atribuição
+        console.log("--------------------")
+        var numero=12;
+        console.log(numero);
+        numero++;
+        console.log(numero);
+        numero++;
+        console.log(numero);
+        numero--;
+        console.log(numero);
+        numero+=10;
+        console.log(numero);
+        numero-=10;
+        console.log(numero);
+
+    </script>
+
+</body>
+</html>
